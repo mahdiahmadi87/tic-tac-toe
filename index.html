@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>XO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class='game'>
+        <h1 style="color: rgb(255, 145, 0);">xo game</h1>
+        <div class="board">
+            <h1 style="color: rgb(255, 243, 137);" id="turn">X turn</h1>
+            <div class="row">    
+                <div onclick="select('0')", id="0" class="btn"><h1 class="xo"></h1></div>
+                <div onclick="select('1')", id="1" class="btn"><h1 class="xo"></h1></div>
+                <div onclick="select('2')", id="2" class="btn"><h1 class="xo"></h1></div>
+            </div>
+            <div class="row">    
+                <div onclick="select('3')", id="3" class="btn"><h1 class="xo"></h1></div>
+                <div onclick="select('4')", id="4" class="btn"><h1 class="xo"></h1></div>
+                <div onclick="select('5')", id="5" class="btn"><h1 class="xo"></h1></div>
+            </div>
+            <div class="row">    
+                <div onclick="select('6')", id="6" class="btn"><h1 class="xo"></h1></div>
+                <div onclick="select('7')", id="7" class="btn"><h1 class="xo"></h1></div>
+                <div onclick="select('8')", id="8" class="btn"><h1 class="xo"></h1></div>
+            </div>
+            <button type="reset" onclick="reset()"><h4 style="margin: 0;">reset</h4></button>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+
+        <div class="modal-content">
+            <p id="text">Some text in the Modal..</p>
+        </div>
+      
+    </div>
+      
+
+    <script src="app.js"></script>    
+</body>
+</html>
